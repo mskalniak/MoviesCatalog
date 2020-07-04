@@ -5,16 +5,34 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="Content-Language" content="en" />
 
-        <title>Counter app</title>
+        <title>Movies Catalog app</title>
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <header>COUNTER app</header>
+        <header>KATALOG FILMOWY</header>
 
         <section>
-            <div id="container">
-
+            <div id="mainContainer">
+                <div id="favouritesContainer">
+                    <div class="mc-margin-20">
+                        <input id="favouriteInput" type="text"></input>
+                        <button id="addBtn" onclick="onAddClicked()">Dodaj</button>
+                    </div>
+                    <div class="mc-margin-left-20">Ulubione (<span id="favouritesCounter"></span>):</div>
+                    <div class="mc-margin-20" id="favouritesList">
+                        
+                    </div>
+                    <div id="adverts">
+                        
+                    </div>
+                </div>
+                <div id="searchContainer">
+                    <div class="mc-margin-20">
+                        <input id="searchInput" type="text"></input>
+                        <button id="searchBtn" onclick="onSearchClicked()">Szukaj</button>
+                    </div>
+                </div>
             </div>
         </section>
 
